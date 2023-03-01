@@ -1,0 +1,578 @@
+*{
+    line-height:1.5;
+    
+}
+
+#head1{
+    background-color: #a5dfe4;
+    height: 60px;
+    border-bottom: 1px solid #015C63;
+    }
+
+#head3{
+    background-color: #ec91d1;
+    height: 60px;
+    border-bottom: 1px solid #015C63;
+    }
+
+ #head2{
+        background-color: #c25dea;
+        height: 60px;
+        border-bottom: 1px solid #015C63;
+        }
+
+        #head4{
+            background-color: #28f1a1;
+            height: 60px;
+            border-bottom: 1px solid #015C63;
+            }
+
+.logo{
+
+    max-height:45px;
+    margin-left:1%; 
+    margin-bottom: -2.5%;
+   
+}
+
+nav{
+    max-width: 1200px;
+    padding: 0px 20px;
+    height: 60px;
+    color: white;
+
+   
+}
+
+
+
+
+    
+
+
+
+ a {
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    text-decoration: none;
+ 
+     }
+
+.nav_links {
+        max-height:150px;
+        list-style: none;
+        color: white;
+        margin-left: 80%;
+        margin-top: 0.3%;
+        display: grid;
+        grid-template-columns: 100px 100px 100px 50px;
+        grid-template-rows: 30px;
+        }
+
+body{
+    background-color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+  
+}
+
+
+
+
+.school{
+    margin-right:20%;
+}
+
+#biggest{
+    font-size: x-large;
+}
+#bigger{
+    font-size: large;
+}
+
+.left{
+    margin-left: 40%;
+    
+}
+
+.right{
+margin-top: 15%;
+}
+
+
+
+
+
+/*  Code by Jake Giles-Phillips ; https://codepen.io/jakegilesphillips/pen/MveNLe */
+
+HTML  CSS Result  
+EDIT ON
+
+ body {
+  background: #323641;
+}
+
+.letter-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.animated-mail {
+  position: absolute;
+  height: 150px;
+  width: 200px;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.animated-mail .body {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 100px 200px;
+  border-color: transparent transparent #13cad7 transparent;
+  z-index: 2;
+}
+.animated-mail .top-fold {
+  position: absolute;
+  top: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 100px 0 100px;
+  -webkit-transform-origin: 50% 0%;
+  -webkit-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  -moz-transform-origin: 50% 0%;
+  -moz-transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  transform-origin: 50% 0%;
+  transition: transform 0.4s 0.4s, z-index 0.2s 0.4s;
+  border-color: #20dae8 transparent transparent transparent;
+  z-index: 2;
+}
+.animated-mail .back-fold {
+  position: absolute;
+  bottom: 0;
+  width: 200px;
+  height: 100px;
+  background: #20dae8;
+  z-index: 0;
+}
+.animated-mail .left-fold {
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 0 50px 100px;
+  border-color: transparent transparent transparent #13cad7;
+  z-index: 2;
+}
+.animated-mail .letter {
+  left: 20px;
+  bottom: 0px;
+  position: absolute;
+  width: 160px;
+  height: 60px;
+  background: white;
+  z-index: 1;
+  overflow: hidden;
+  -webkit-transition: 0.4s 0.2s;
+  -moz-transition: 0.4s 0.2s;
+  transition: 0.4s 0.2s;
+}
+.animated-mail .letter .letter-border {
+  height: 10px;
+  width: 100%;
+  background: repeating-linear-gradient(-45deg, #20dae8, #20dae8 8px, transparent 8px, transparent 18px);
+}
+.animated-mail .letter .letter-title {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 40%;
+  background: #20dae8;
+}
+.animated-mail .letter .letter-context {
+  margin-top: 10px;
+  margin-left: 5px;
+  height: 10px;
+  width: 20%;
+  background: #20dae8;
+}
+.animated-mail .letter .letter-stamp {
+  margin-top: 30px;
+  margin-left: 120px;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  background: #20dae8;
+  opacity: 0.3;
+}
+
+.shadow {
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  width: 400px;
+  height: 30px;
+  transition: 0.4s;
+  transform: translateX(-50%);
+  -webkit-transition: 0.4s;
+  -webkit-transform: translateX(-50%);
+  -moz-transition: 0.4s;
+  -moz-transform: translateX(-50%);
+  border-radius: 100%;
+  background: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+
+.letter-image:hover .animated-mail {
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+}
+.letter-image:hover .animated-mail .top-fold {
+  transition: transform 0.4s, z-index 0.2s;
+  transform: rotateX(180deg);
+  -webkit-transition: transform 0.4s, z-index 0.2s;
+  -webkit-transform: rotateX(180deg);
+  -moz-transition: transform 0.4s, z-index 0.2s;
+  -moz-transform: rotateX(180deg);
+  z-index: 0;
+}
+.letter-image:hover .animated-mail .letter {
+  height: 180px;
+}
+.letter-image:hover .shadow {
+  width: 250px;
+}
+
+
+/* End of his code */
+.buttonside{
+min-width: 90%;
+text-align: left;
+font-size: medium;
+background-color: rgb(255, 255, 255);
+border: 1px solid #999999;
+padding: 2px;
+border-radius: 4px;
+color: black;
+padding: 10px 15px;
+cursor: pointer;
+display: table;
+
+}
+
+.buttonside_active{
+    min-width: 90%;
+text-align: left;
+font-size: medium;
+background-color: #a5dfe4;
+border: 1px solid #999999;
+padding: 2px;
+border-radius: 4px;
+color: black;
+padding: 10px 15px;
+cursor: pointer;
+display: table;
+}
+
+.sidebar{
+    max-width: 17%;
+    min-width:20%;
+    margin-left: -0.5%;
+    margin-top:2%;
+    padding: 10px 20px;
+    }
+
+.emailbox{
+    max-width: 100%;
+    max-height: 100%;
+min-width:20%;
+min-height:10%;
+margin-left: 17%;
+margin-top: -13%;
+padding-right: 6%;
+    }
+
+.school{
+    margin-top:-8%;
+}
+
+.right{
+    margin-top: 10%;
+}
+
+img{
+    
+    height: 200px;
+
+}
+
+#moveimg{
+    margin-top:3%;
+    margin-left: 5%;
+}
+
+.techpage{
+    margin-top: -40%;
+    margin-left: -10%;
+}
+
+
+
+
+
+/* Code by Nitish Khagwal ; https://codepen.io/nitishkmrk/pen/jyYEop with slight modifications */
+
+
+
+  .swatch {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 100px;
+  }
+  .swatch div {
+    width: 70px;
+    height: 225px;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    border-top: solid 2px rgba(0, 0, 0, 0.2);
+    border-left: solid 3px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    transform-origin: center 90%;
+    display: inline-block;
+    backface-visibility: hidden;
+    margin-left: -35px;
+    transform: rotate(0deg);
+  }
+  .swatch div:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: -8px;
+  }
+  .swatch div:nth-child(1) {
+    background-color: #d0a7de;
+    animation: swatch-purple-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(2) {
+    background-color: #67cbd6;
+    animation: swatch-blue-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(3) {
+    background-color: #8deb85;
+    animation: swatch-green-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(4) {
+    background-color: #f1dd6f;
+    animation: swatch-yellow-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(5) {
+    background-color: #fba6f8;
+    animation: swatch-orange-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(6) {
+    background-color: #f1929c;
+    animation: swatch-red-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  @keyframes swatch-purple-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-65deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-blue-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-40deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-green-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-15deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-yellow-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(15deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-orange-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(40deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-red-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(65deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+/* End of Code by Nitish Khagwal */
+
+
+#logos{
+    height:45px;
+}
+
+
+
+#logo{
+    margin-left: 100%;
+    margin-top:-1%;
+    height:90px;
+}
+
+#logo2{
+    margin-left: 70%;
+    margin-top:-1%;
+    height:140px;
+}
+
+#up{
+    margin-top:-10%;
+}
+
+.moveup{
+    margin-top:-10%;
+}
+
+.logo3{
+    height:180px;
+}
+
+.logo4{
+    height:90px;
+}
+
+#moveup1{
+    margin-top:-10%;
+}
+
+#moveup2{
+    margin-top:-10%;
+}
+
+#logo5{
+    margin-left:5%;
+    height:65px;
+}
+
+/* Logo outlook */
+#logo6{
+    margin-left:3%;
+    height:70px;
+}
+
+footer{
+color: black;
+padding-left: 600px;
+}
+
+
+
+/* Code by Florin Pop*/
+
+.blob {
+	background: rgb(230, 6, 6);
+	border-radius: 50%;
+	margin: 1px;
+	height: 5px;
+	width: 5px;
+    margin-top: 4%;
+    margin-right:5%;
+
+	box-shadow: 0 0 0 0 rgb(232, 7, 7);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(232, 5, 5, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+/* End of code */
+
+.moveleft{
+  margin-left:18%;
+  margin-top:-7%;
+}
