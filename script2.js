@@ -16,7 +16,7 @@ function skill(){
       <br>\
       <div class="left" id="bigger"><u> Ready to use </u></div><br>\
       <div class="left"><li>Python3</li></div>\
-      <div class="left"><li> JavaScript (familiar with JQuery, JSON, AJAX, ReactNg, XML)</li></div>\
+      <div class="left"><li> JavaScript (familiar with JQuery, JSON, AJAX, RelaxNg, XML)</li></div>\
       <div class="left"><li> Visual Basic </li></div>\
       <div class="left"><li> CSS </li></div>\
       <div class="left"><li> HTML5 </li></div>\
