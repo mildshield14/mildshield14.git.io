@@ -1,0 +1,597 @@
+
+
+    /* Reset styles */
+* {
+	margin: 0;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	box-sizing: border-box;
+	
+}
+
+/* Typography */
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	
+	line-height: 1.5;
+	color: #333;
+	
+}
+
+h1, h2, h3 {
+	margin-bottom: 1rem;
+}
+
+/* Header */
+header {
+	background-color: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	position: sticky;
+	top:0;
+	z-index: 100;
+}
+
+.aboutpage {
+	padding: 6rem 0;
+	background-color: #f2f2f2;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+/* Move para left */
+.left{
+    margin-left: 40%;
+}
+
+#moveimg{
+    margin-top:3%;
+    margin-left: 5%;
+}
+
+.aboutpage{
+	height: calc(330vh - 4rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(to bottom, #E6F1F6, #BFD7EA);
+	background-size: 100% 200%;
+	color: #fff;
+	transition: all 0.5s ease;
+  }
+  
+  .aboutpage::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+  }
+  
+  .aboutpage::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #000;
+  }
+  
+  .aboutpage:hover {
+	background-position: 0% 100%;
+  }
+  
+  .aboutpage:hover .about {
+	opacity: 1;
+  }
+
+/* more professional looking features code*/
+
+
+  
+  /* Style the header */
+  header {
+	background-color: #fff;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+  }
+   /* Import the Montserrat font from Google Fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+/* Set the font-family property to Montserrat */
+body {
+  font-family: 'Dongle', sans-serif;
+}
+  
+  /* Style the navigation menu */
+  nav {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5rem;
+	padding: 0px;
+
+}
+
+
+
+nav ul {
+	
+	display: flex;
+	list-style: none;
+	padding-bottom: 30px;
+}
+
+nav ul li {
+	margin-right: 0rem;
+	margin-left: -1rem;
+
+}
+
+nav ul li a {
+	width: 80px;
+	border-radius: 9px;
+	display: block;
+	padding: 0.5rem;
+	text-decoration:none;
+	color: #333;
+	transition: color 0.2s ease;
+	background-color: #8FB8DE;
+	color: #fff;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li a:hover {
+	background-color: #6F9CCB;
+}
+
+nav ul li a.active {
+	background-color: #5f8cbb;
+}
+  
+  /* Style the main content area */
+  .aboutpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutpage img {
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+}
+
+.aboutpage .techpage {
+    width: 50%;
+    text-align: justify;
+}
+
+.aboutpage .techpage ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutpage .techpage ul li {
+   
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* CSS for the video */
+iframe {
+	display: block;
+	margin: auto;
+}
+
+.skill-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  }
+  
+  .skill {
+	background-color: #8FB8DE;
+	border-radius: 20px;
+	color: #ffffff;
+	font-size: 17px;
+	margin: 10px;
+	padding: 10px 5px;
+	text-align: center;
+	transition: all 0.2s ease-in-out;
+  }
+  
+  .skill:hover {
+	background-color: #6F9CCB;
+	cursor: pointer;
+  }
+
+
+  .skill-list {
+	flex-basis: 100%;
+  }
+  
+  
+  .skill {
+	flex-basis: 50%;
+	padding: 10px;
+  }
+
+  .aboutTitles{
+	font-size: 25px;
+	color: #6F9CCB;
+  }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+  /* Code by Nitish Khagwal ; https://codepen.io/nitishkmrk/pen/jyYEop with slight modifications */
+
+
+
+  .swatch {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 100px;
+  }
+  .swatch div {
+    width: 70px;
+    height: 225px;
+    position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    border-top: solid 2px rgba(0, 0, 0, 0.2);
+    border-left: solid 3px rgba(255, 255, 255, 0.2);
+    border-bottom: solid 3px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    transform-origin: center 90%;
+    display: inline-block;
+    backface-visibility: hidden;
+    margin-left: -35px;
+    transform: rotate(0deg);
+  }
+  .swatch div:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: -8px;
+  }
+  .swatch div:nth-child(1) {
+    background-color: #d0a7de;
+    animation: swatch-purple-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(2) {
+    background-color: #67cbd6;
+    animation: swatch-blue-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(3) {
+    background-color: #8deb85;
+    animation: swatch-green-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(4) {
+    background-color: #f1dd6f;
+    animation: swatch-yellow-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(5) {
+    background-color: #fba6f8;
+    animation: swatch-orange-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .swatch div:nth-child(6) {
+    background-color: #f1929c;
+    animation: swatch-red-motion 5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  @keyframes swatch-purple-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-65deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-blue-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-40deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-green-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(-15deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-yellow-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(15deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-orange-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(40deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  @keyframes swatch-red-motion {
+    0% {
+      transform: rotate(0deg);
+    }
+    30%,
+    70% {
+      transform: rotate(65deg);
+    }
+    90%,
+    10% {
+      transform: rotate(0deg);
+    }
+  }
+  
+
+
+/* End of Code by Nitish Khagwal */
+
+#logos{
+    height:45px;
+}
+
+
+#logo{
+   float: right;
+    height:90px;
+}
+
+
+
+#logo2{
+	float: right;
+    height:140px;
+}
+
+
+
+.logo4{
+    height:180px;
+}
+
+#moveup1{
+    margin-top:-15%;
+}
+
+
+
+#logo5{
+  
+    height:65px;
+}
+
+/* Logo outlook */
+#logo6{
+    margin-left:3%;
+    height:70px;
+}
+
+img{
+    
+    height: 200px;
+
+}
+
+/* add a transition to the books and films sections */
+#books,
+#films {
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* set the initial opacity of the sections to 0 */
+#books,
+#films {
+  opacity: 0;
+}
+
+/* when the sections are hovered over, change the opacity to 1 */
+#book-sect:hover,
+#film-sect:hover {
+  opacity: 1;
+}
+
+/* add a transition to the image in each section */
+.book,
+.film {
+	size: 200px;
+padding: 10px;
+padding-left: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+/* when an image is hovered over, scale it up slightly */
+.book:hover,
+.film:hover {
+  transform: scale(1.1);
+}
+
+
+
+.blog p {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	color: #333;
+  }
+
+  
+  .quote {
+	font-style: italic;
+	font-size: 1.3rem;
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+  }
+  
+  /* Background Transitions */
+  .blog, #book-sec {
+	transition: background-color 0.5s ease-out;
+  }
+  
+  .blog:hover, #book-sec:hover {
+	background-color: #ebf3f5;
+	color: #fff;
+  }
+
+  .blog p{
+	color: #333;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .blogMoveCenter{
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #quote{
+	font-style: italic;
+  border-left: 5px solid #ccc;
+  padding: 5px;
+  margin: 0;
+  }
+
+
+
+  @media (max-width: 900px) {
+	nav ul li a {
+	  font-size: 1.2rem;
+	  margin-right: 0.5rem;
+	  padding: 0.3rem;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*-- <h2>My Projects</h2> 
+  <div class="project-item">
+      <img src="https://via.placeholder.com/300" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget risus purus.</p>
+      <a href="#" class="btn">View Project</a>
+  </div>
+  <div class="project-item">
+      <img src="https://via.placeholder.com/300" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget risus purus.</p>
+      <a href="#" class="btn">View Project</a>
+  </div>*/
