@@ -6,11 +6,13 @@
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.11.338/pdf.min.js"></script>
 
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 <body>
 	<header>
@@ -32,10 +34,9 @@
 		<p class="name">Vennila Sooben</p>
 	  </header>
 	  
-	<div id="resume>">
-<embed src="/VennilaSooben_Resume.pdf" type="application/pdf" width="100%" height="700px" />
+	
 </div>
-
+<embed src="/VennilaSooben_Resume.pdf" type="application/pdf" width="100%" height="700px" />
 <footer>
 	<div class="footer-container">
 	  <div class="footer-left">
@@ -49,6 +50,13 @@
 	  </div>
 	</div>
   </footer>
-  
+
+  <script>
+	// Redirect to Google Drive if the screen size is below 600px
+	if (screen.width < 600) {
+		window.location.href = "https://drive.google.com/file/d/1wagmqUlTQffCdvoGC_KTrzHmfuUp-O8B/view?usp=sharing";
+	}
+</script>
+
 </body>
 </html>

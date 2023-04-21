@@ -74,7 +74,7 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
   
-
+  
   
   nav {
     display: none;
@@ -594,7 +594,33 @@ footer {
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+.hero{
+  margin-top: 20%;
+}
+.aboutpage iframe{
+  width:80%;
+}
+
+.hero .btn{
+  width:80%;
+}
+
+.aboutpage img{
+  width:80%
+}
+.aboutpage .name {
+  margin-top: -80%;
+}
+
+.linkedin img{
+  width:50%;
+}
+
+
+  .skill{
+    margin-top: -2%;
+  }
 .school .name{
   margin-top: 20%;
 }

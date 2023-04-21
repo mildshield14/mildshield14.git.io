@@ -19,9 +19,8 @@ function toggleNav() {
 
 
 
-
 function displayResume(){
-  location.replace("/src/resume.html");
+  location.replace("src/resume.html");
 }
 
 function linkedin() {

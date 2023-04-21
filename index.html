@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="src/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
@@ -12,18 +12,22 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="script.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> window.onload = changeIndex();
+	function changeIndex(){
+	  location.replace("src/index.html");
+	}</script>
 </head>
-<body>
+<body onload="changeIndex()">
 	<header>
 		<div class="nav-container">
 		  <nav>
 			<ul>
-			  <li><a class="active" href="index.html">Home</a></li>
-			  <li><a href="/src/about.html">Skills</a></li>
-			  <li><a href="/src/projects.html">Projects</a></li>
-			  <li><a href="/src/contact.html">Contact</a></li>
-			  <li><a href="/src/school.html">School</a></li>
-			  <li><a href="/src/blog.html">Blog</a></li>
+			  <li><a class="active" href="src/index.html">Home</a></li>
+			  <li><a href="src/about.html">Skills</a></li>
+			  <li><a href="src/projects.html">Projects</a></li>
+			  <li><a href="src/contact.html">Contact</a></li>
+			  <li><a href="src/school.html">School</a></li>
+			  <li><a href="src/blog.html">Blog</a></li>
 			</ul>
 		  </nav>
 		  <div class="menu-icon-container">
@@ -38,7 +42,7 @@
 		<section class="hero" id="home">
 			<h1>Welcome to my portfolio</h1>
 			<p>Here you can find information about me and my projects in the near future</p>
-			<a href="#projects" class="btn" onclick="displayResume()">View Resume (English followed by French)</a>
+			<a href="resume.html" class="btn" onclick="displayResume()">View Resume (English followed by French)</a>
 		</section>
 
 	
