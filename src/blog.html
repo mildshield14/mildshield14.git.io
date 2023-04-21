@@ -5,25 +5,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="script.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<header>
-		<nav>
+		<div class="nav-container">
+		  <nav>
 			<ul>
-				<li><a href="/src/index.html">Home</a></li>
-				<li><a href="/src/about.html">Skills</a></li>
-				<li><a href="/src/projects.html">Projects</a></li>
-				<li><a href="/src/contact.html">Contact</a></li>
-          <li><a href="/src/school.html">School</a></li>
-          <li><a class="active" href="/src/blog.html">Blog</a></li>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="/src/about.html">Skills</a></li>
+			  <li><a href="/src/projects.html">Projects</a></li>
+			  <li><a href="/src/contact.html">Contact</a></li>
+			  <li><a href="/src/school.html">School</a></li>
+			  <li><a href="/src/blog.html">Blog</a></li>
 			</ul>
-		</nav>
+		  </nav>
+		  <div class="menu-icon-container">
+			<div class="menu-icon" onclick="toggleNav()"><i class="icon fa fa-bars"></i></div>
+		  </div>
+		</div>
+		<p class="name">Vennila Sooben</p>
+	  </header>
+	  
+	  
+
+   <!-- template:   https://codepen.io/carlosrojaso/pen/gOPMjGg 
+    Coded and © Copyright by : Nabin Jaiswal -->
 
         <section class="blog" id="blog">
+
+          <div section="firstparaBlog"><br><br><br><br><br><br>
+            <div class="name">About Me</div>
             <p > My name is Vennila Sooben</p>
             <p> I am from a small paradisiac island in the middle of the Indian Ocean.</p>
 <div class="blogMoveCenter"  ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSswi5PgISPmwivjRUP7pH4bbLZwBBxoOC0Gg&usqp=CAU"/>
@@ -31,14 +49,18 @@
             <br>
             <br>
             <p>Yes, I moved from sand land to reach snow land</p> 
-            <p><img src="https://media.tenor.com/JPdUMqnnRGMAAAAM/beach.gif"/>  <img src = "https://thumbs.gfycat.com/VagueEqualHake-max-1mb.gif"/></p>
+            <p><img src="https://media.tenor.com/JPdUMqnnRGMAAAAM/beach.gif"/> <div class="spacehere" ></div><img src = "https://thumbs.gfycat.com/VagueEqualHake-max-1mb.gif"/></p>
           <br>
+
+          </div>
           
             <br>
 
+            <div class="secondparaBlog">
+
             <div id="film-sec">
                 <p> I am a proud foodie and a big fan of tv shows.</p>
-            <p>Some of the shows i liked</p>
+            <p>Here are some of the shows i liked</p>
             <img class="film" src="https://m.media-amazon.com/images/M/MV5BNTU1N2ViZDctYzQwOS00ZDYyLThkMDItNmEwYTIyZTI4NGFhXkEyXkFqcGdeQXVyNTM1NDMwNDM@._V1_.jpg"/>
             <img class="film" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/How_to_Get_Away_with_Murder_season_5_poster.jpg/220px-How_to_Get_Away_with_Murder_season_5_poster.jpg"/>
             <img class="film" src="https://roost.nbcuni.com/bin/viewasset.html/content/dam/Peacock/Landing-Pages/2-0-design/modern-family/modern-family-description-image.jpg/_jcr_content/renditions/original.JPEG"/>
@@ -48,10 +70,12 @@
             <img class="film" src="https://m.media-amazon.com/images/M/MV5BNzVkYWY4NzYtMWFlZi00YzkwLThhZDItZjcxYTU4ZTMzMDZmXkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_FMjpg_UX1000_.jpg"/>
             <img class="film" src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw=="/>
         </div>
-           
+           </div>
+
+           <div class="thirdparaBlog">
             <div id="book-sec">
-                <p> Also, I like debates and reading fiction.</p>
-  <p> I like to read modern fiction but I also enjoy french literature</p>
+               <p> Also, I like debates and reading fiction.
+  I like to read modern fiction but I also enjoy french literature<br> </p>
   <br>
 
   <div id="quote">
@@ -81,12 +105,37 @@
   <img class="book" src=" https://m.media-amazon.com/images/I/6120CvwAJvL.jpg"/>
  
   <br>
+  </div>
  <br>
  </div>
-  <p> I code since 2018 and i got fond of it in 2020 during the pandemic when i started </p>
-  <p> to learn HTML and CSS by myself and when in class I was finally able to understand OOP </p>
-  <p> and how to traverse a linked list :D </p>
+
+ <div class="fourthparaBlog">
+  <p> I code since 2018 and i got fond of it in 2020 during the pandemic  
+     when i started to learn HTML and CSS by myself and when in class, I was finally able to understand OOP
+  and how to traverse a linked list :D </p>
 
   <div class="blogMoveCenter"><img src="https://preview.redd.it/5mfbi6v63ir41.jpg?width=640&crop=smart&auto=webp&s=d35af7763f22457bd35170de28c9ae5b889215b2"/>
+  <br>
+  <br>
+  </div>
   </div>
 </div>
+</section>
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-left">
+    <p>&copy; 2023 Vennila Sooben</p>
+    </div>
+    <div class="footer-right">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/vennilasooben/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+      <li><a href="https://github.com/mildshield14" target="_blank"><i class="fa fa-github-square"></i></a></li>
+    </ul>
+    </div>
+  </div>
+  </footer>
+  
+</body>
+</html>

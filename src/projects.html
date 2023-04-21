@@ -5,48 +5,135 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>My Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="script.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<header>
-		<nav>
+
+		<div class="nav-container">
+		  <nav>
 			<ul>
-				<li><a href="/src/index.html">Home</a></li>
-				<li><a href="/src/about.html">Skills</a></li>
-				<li><a class="active" href="/src/projects.html">Projects</a></li>
-				<li><a href="/src/contact.html">Contact</a></li>
-                    <li><a href="/src/school.html">School</a></li>
-                    <li><a href="/src/blog.html">Blog</a></li>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="/src/about.html">Skills</a></li>
+			  <li><a href="/src/projects.html">Projects</a></li>
+			  <li><a href="/src/contact.html">Contact</a></li>
+			  <li><a href="/src/school.html">School</a></li>
+			  <li><a href="/src/blog.html">Blog</a></li>
 			</ul>
-		</nav>
+		  </nav>
+		  <div class="menu-icon-container">
+			<div class="menu-icon" onclick="toggleNav()"><i class="icon fa fa-bars"></i></div>
+		  </div>
+		</div>
+		<p class="name">Vennila Sooben</p>
+	  </header>
+	  
+  </div>
+</div>
+</header>
 
-        <section class="projects" id="projects">
-            <div class="container">
-               
-                <div class="project-item">
-                    <img src="" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Website Portfolio</p>
-                    <a href="https://github.com/mildshield14/mildshield14.github.io" class="btn">View Project</a>
-                                    <br><p id="bigger">  Made using : </p>
-                          <div class="swatch">
-                            <div><p>HTML</p><br><img id="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png?20110131171049"></div>
-                            <div><p>CSS</p><br><img id="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1024px-CSS3_logo.svg.png?20210705212817"></div>
-                            <div><p>Javascript</p><br><img id="logos" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?20120221235433"></div>
-                            <div><p>JQuery</p><br><img id="logos" src="https://cdn.worldvectorlogo.com/logos/jquery-4.svg"></div>
-                            <div><p>Git</p><br><img id="logos" src="https://git-scm.com/images/logos/logomark-orange@2x.png"></div>
-                            <div><p>Bootstrap</p><br><img id="logos" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png?20210507000024"></div>
-                          </div>
-                    </div>
+<div class="project-dashboard">
+  <div class="project-box" ><a href="https://github.com/mildshield14/mildshield14.github.io">
+    <h2>Project 1</h2>
+    <p>Website Portfolio</p>
+    <p>HTML | CSS | JavaScript along with some other libraries </p>
+    <p>Current: working on blog and skills page</p>
+    
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 80%"></div>
+    </div>
+    <div class="progress-label">
+      <span>80% complete</span>
+    </div>
+  </a></div>
 
-                </div>
+  <div class="project-box">
+    <h2>Project 2</h2>
+    <p>Basic Python ChatBot</p>
+    <p>Python with different libraries and APIs </p>
+    <p>Current: Working on web-scraping</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 70%"></div>
+    </div>
+    <div class="progress-label">
+      <span>70% complete</span>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <h2>Project 3</h2>
+    <p>Weather Forecast Emailing</p>
+    <p>Python with different libraries and APIs like sendinblue</p>
+    <p>DONE</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 100%"></div>
+    </div>
+    <div class="progress-label">
+      <span>100% complete</span>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <h2>Project 4</h2>
+    <p>Interface for Weather Emailing</p>
+    <p>Python with Flask,Django and different libraries and APIs </p>
+    <p>Currently working interface graphics ideas (maybe use plotlib)</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 10%"></div>
+    </div>
+    <div class="progress-label">
+      <span>10% complete</span>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <h2>Project 5</h2>
+    <p>Client-Server Model GUI + CLI</p>
+    <p> Java | JavaFx </p>
+    <p>Currently working on multithreading (waiting for end of session to work further on it</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 80%"></div>
+    </div>
+    <div class="progress-label">
+      <span>80% complete</span>
+    </div>
+  </div>
+
+
+  <div class="project-box">
+    <h2>Project 6</h2>
+    <p>Interface for ChatBot</p>
+    <p>Python with Django, different libraries and APIs </p>
+    <p>Currently working on learning more on Django</p>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 1%"></div>
+    </div>
+    <div class="progress-label">
+      <span>1% complete</span>
+    </div>
+  </div>
+
+</div>
+
+        <footer>
+          <div class="footer-container">
+            <div class="footer-left">
+            <p>&copy; 2023 Vennila Sooben</p>
             </div>
-        </section>
-
-        </header>
+            <div class="footer-right">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/vennilasooben/" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
+              <li><a href="https://github.com/mildshield14" target="_blank"><i class="fa fa-github-square"></i></a></li>
+            </ul>
+            </div>
+          </div>
+          </footer>
         </body>
         </html>
         

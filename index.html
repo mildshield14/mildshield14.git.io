@@ -3,15 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>CONTACT</title>
+	<title>My Portfolio</title>
 	<link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 	<script src="script.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 	<header>
@@ -34,36 +34,16 @@
 	  </header>
 	  
 	  
-	
-	<main>
-		<section class="contact-form">
-            <h2>Contact Me</h2>
-            <form
-  action="https://formspree.io/f/xvondalb"
-  method="POST"
->
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-          
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required>
-          
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" rows="6" required></textarea>
-          
-              <input type="submit" value="Send" onclick="handleSubmit()">
-			  <p id="my-form-status"></p>
-            </form>
-            <br>
-            <br>
-			<div class="linkedin" a href="https://www.linkedin.com/in/vennila-sooben/">
-			<h2>Click here for</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"/></div>
-          </section>
-          
-	</main>
+		
+		<section class="hero" id="home">
+			<h1>Welcome to my portfolio</h1>
+			<p>Here you can find information about me and my projects in the near future</p>
+			<a href="#projects" class="btn" onclick="displayResume()">View Resume (English followed by French)</a>
+		</section>
 
-    <footer>
+	
+	
+	<footer>
 		<div class="footer-container">
 		  <div class="footer-left">
 			<p>&copy; 2023 Vennila Sooben</p>
@@ -77,8 +57,6 @@
 		</div>
 	  </footer>
 	  
-        
-
-        </body>
-        
-        </html>
+	
+</body>
+</html>

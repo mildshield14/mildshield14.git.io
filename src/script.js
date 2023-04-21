@@ -1,39 +1,37 @@
+$(document).ready(function() {
+  $('a[href^="#"]').on('click', function(event) {
+  var target = $(this.getAttribute('href'));
+  if( target.length ) {
+  event.preventDefault();
+  $('html, body').stop().animate({
+  scrollTop: target.offset().top
+  }, 1000);
+  }
+  });
+  });
+
+  
+
+function toggleNav() {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('active');
+}
+
+
+
+
 function displayResume(){
   location.replace("/src/resume.html");
-
-
 }
 
 function linkedin() {
-
     window.location.replace("https://www.linkedin.com/in/vennilasooben");
-
 }
 
-function email(){
-  
-  // using Twilio SendGrid's v3 Node.js Library
-// https://github.com/sendgrid/sendgrid-nodejs
-const sgMail = import('@sendgrid/mail')
-sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-const msg = {
-  to: 'vennilasooben1401@gmail.com', // Change to your recipient
-  from: 'personal_projects_email@proton.me', // Change to your verified sender
-  subject: 'Sending with SendGrid is Fun',
-  text: 'and easy to do anywhere, even with Node.js',
-  html: '<strong>and easy to do anywhere, even with Node.js</strong>',
-}
-sgMail
-  .send(msg)
-  .then(() => {
-    console.log('Email sent')
-  })
-  .catch((error) => {
-    console.error(error)
-  })
- 
-  
-}
+
+
+
+
 
 
 

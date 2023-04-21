@@ -16,7 +16,9 @@ This is where credit is given to any third-party resources used in the project.
 Resource 1 previous project; https://github.com/alexandramorin/AVM.git
 Resource 2 https://www.w3schools.com/css/default.asp (Flex-Box)
 Resource 3 Code by Nitish Khagwal ; https://codepen.io/nitishkmrk/pen/jyYEop with slight modifications
-Resource 4 CHATGPT-3 (README.md + fixing small bugs)
+Resource 4 School section ; https://codepen.io/htmlcodex/pen/LYGjPgV*/
+Resource 5 Resume part:   https://codepen.io/carlosrojaso/pen/gOPMjGg 
+Resource 6 CHATGPT-3 (README.md + fixing small bugs)
 
 
 License
