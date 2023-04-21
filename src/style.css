@@ -72,8 +72,19 @@ nav ul li a:hover {
   display: none;
 }
 
+iframe{
+  margin-top:5%;
+}
+
+@media only screen and (max-width: 800px) {
+  iframe{
+    margin-top:20%;
+  }}
+
 @media only screen and (max-width: 600px) {
-  
+  iframe{
+    margin-top:18%;
+  }
   
   
   nav {
