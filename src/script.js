@@ -10,7 +10,6 @@ $(document).ready(function() {
   });
   });
 
-  
 
 function toggleNav() {
   const nav = document.querySelector('nav');
@@ -19,12 +18,22 @@ function toggleNav() {
 
 
 
-function displayResume(){
-  location.replace("src/resume.html");
-}
-
 function linkedin() {
     window.location.replace("https://www.linkedin.com/in/vennilasooben");
+}
+
+
+function addNumbersProject(){
+  const projectElements = document.querySelectorAll('.projectnumber');
+  
+  console.log(projectElements)
+
+  projectElements.forEach((element, index) => {
+   
+    const projectNumber = index + 1;
+
+    element.textContent += ` ${projectNumber}`;
+});
 }
 
 

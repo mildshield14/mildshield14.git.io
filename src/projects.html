@@ -13,7 +13,7 @@
 	<script src="script.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body>
+<body onload="addNumbersProject()">
 	<header>
 
 		<div class="nav-container">
@@ -40,11 +40,12 @@
 
 <div class="project-dashboard">
   <div class="project-box" ><a href="https://github.com/mildshield14/mildshield14.github.io">
-    <h2>Project 1</h2>
+    <h2 class="projectnumber">Project</h2>
     <p>Website Portfolio</p>
     <p>HTML | CSS | JavaScript along with some other libraries </p>
-    <p>Current: working on blog and skills page</p>
-    
+    <p>Currently working on blog and skills page</p>
+    <p>Website to display my projects, courses taken etc</p>
+    <br>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 80%"></div>
     </div>
@@ -54,23 +55,26 @@
   </a></div>
 
   <div class="project-box">
-    <h2>Project 2</h2>
-    <p>Basic Python ChatBot</p>
-    <p>Python with different libraries and APIs </p>
-    <p>Current: Working on web-scraping</p>
+    <h2 class="projectnumber">Project</h2>
+    <p>Robots Management System</p>
+    <p>Java, Swing </p>
+    <p>Done. *Maintenance phase of SDC*</p>
+    <p>For IFT2255 course (Soft Eng); system to connect clients and robots suppliers. Platform available to use robot as well and a small social media prototype included </p>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 70%"></div>
     </div>
     <div class="progress-label">
-      <span>70% complete</span>
+      <span>100% complete</span>
     </div>
   </div>
 
+
   <div class="project-box">
-    <h2>Project 3</h2>
+    <h2 class="projectnumber">Project</h2>
     <p>Weather Forecast Emailing</p>
     <p>Python with different libraries and APIs like sendinblue</p>
-    <p>DONE</p>
+    <p>Done.</p>
+    <p>Script that will be sending email on a city that user inputs. It uses current location if city does not exist in API</p>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 100%"></div>
     </div>
@@ -79,24 +83,16 @@
     </div>
   </div>
 
-  <div class="project-box">
-    <h2>Project 4</h2>
-    <p>Interface for Weather Emailing</p>
-    <p>Python with Flask,Django and different libraries and APIs </p>
-    <p>Currently working on interface graphics ideas (maybe use plotlib)</p>
-    <div class="progress-bar">
-      <div class="progress-fill" style="width: 10%"></div>
-    </div>
-    <div class="progress-label">
-      <span>10% complete</span>
-    </div>
-  </div>
 
   <div class="project-box">
-    <h2>Project 5</h2>
+    <h2 class="projectnumber">Project</h2>
     <p>Client-Server Model GUI + CLI</p>
     <p> Java | JavaFx </p>
     <p>Currently working on multithreading (waiting for end of session to work further on it)</p>
+    <p>For IFT1025 class (Programming 2): used to register students to courses</p>
+   <br>
+   <br>
+   <br>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 80%"></div>
     </div>
@@ -107,10 +103,15 @@
 
 
   <div class="project-box">
-    <h2>Project 6</h2>
+    <h2 class="projectnumber">Project</h2>
     <p>Internship Tracker</p>
     <p>Python with Flask, sqlite3 | mySQL </p>
     <p>Need better front-end aesthetic</p>
+    <p>Used to track internships applications (responses received, when application was made etc)</p>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 85%"></div>
     </div>
@@ -121,10 +122,11 @@
 
 
   <div class="project-box">
-    <h2>Project 7</h2>
+    <h2 class="projectnumber">Project</h2>
     <p>Pantry Tracker</p>
     <p>Python with tkinter, sqlite3 | mySQL </p>
     <p>Done; now I am working towards implementing the APP version in XCode (learning Swift)</p>
+    <p>Used to track spendings. Insert groceries items and quantities bought and used then when an item is nearly used up, notification is sent. </p>
     <div class="progress-bar">
       <div class="progress-fill" style="width: 90%"></div>
     </div>
@@ -133,7 +135,22 @@
     </div>
   </div>
   <div class="project-box">
-    <h2>Project 8</h2>
+    <h2 class="projectnumber">Project</h2>
+    <p>Basic Python ChatBot</p>
+    <p>Python with different libraries and APIs </p>
+    <p>Currently working on web-scraping</p>
+    <p>Chatbot that can answer simple questions</p>
+
+    <br>
+    <div class="progress-bar">
+      <div class="progress-fill" style="width: 70%"></div>
+    </div>
+    <div class="progress-label">
+      <span>70% complete</span>
+    </div>
+  </div>
+  <div class="project-box">
+    <h2 class="projectnumber">Project</h2>
     <p>Interface for ChatBot</p>
     <p>Python with Django, different libraries and APIs </p>
     <p>Currently working on learning more on Django</p>

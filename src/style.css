@@ -624,6 +624,14 @@ footer {
   margin-top: -80%;
 }
 
+#homesection {
+  font-size: xx-large;
+}
+
+#homesectionpara {
+  font-size:small;
+}
+
 .linkedin img{
   width:50%;
 }
